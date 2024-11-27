@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1em;
+            background-color: rgb(184, 180, 175);
+        }
+        li{
+            list-style-type: none;
+        }
+        li button{
+            padding: 0.5em;
+            font-size: large;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 1em;
+        }
+        .card {
+            text-align: center;
+            width: 300px;
+            border: 2px solid black;
+            padding: 1em;
+            background-color: rgba(245, 245, 245, 0.449);
+            border-radius: 2em;
+            transition: width 0.3s ease, background-color 0.3s ease; /* Add transition */
+        }
+
+        .card:hover {
+            width: 400px;
+            background-color: rgba(230, 230, 230, 0.9); /* Optional: change color slightly on hover */
+        }
+
+        img{
+            width: 250px;
+            border-radius: 1em;
+        }
+        #main{
+            padding-top: 2em;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 2em;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+</body>
+</html>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script type="text/babel" src="./app.js"></script>
